@@ -6,8 +6,8 @@ public interface Pila<T> {
 	
 	public void push (T e);
 	
-	public T top() throws EccezioneStrutturaVuota;
+	public T top();
 	
-	public void pop() throws EccezioneStrutturaVuota;
+	public void pop();
 
 }
