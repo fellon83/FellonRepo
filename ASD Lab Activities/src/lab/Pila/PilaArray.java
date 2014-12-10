@@ -1,6 +1,6 @@
 package lab.Pila;
 
-import lab.eccezioni.EccezioneStrutturaVuota;
+import lab.Eccezioni.EccezioneStrutturaVuota;
 
 /**
  * Pila basata su un array di oggetti generici T e con la tecnica del raddoppiamento/dimezzamento

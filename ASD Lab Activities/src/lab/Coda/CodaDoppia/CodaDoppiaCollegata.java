@@ -1,6 +1,6 @@
 package lab.Coda.CodaDoppia;
 
-import lab.eccezioni.EccezioneStrutturaVuota;
+import lab.Eccezioni.EccezioneStrutturaVuota;
 
 /**
  * Implementazione di una Coda percorribile in entrambi i versi ed è basata su una struttura collegata di record

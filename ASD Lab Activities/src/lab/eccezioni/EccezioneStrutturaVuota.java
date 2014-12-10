@@ -1,4 +1,4 @@
-package lab.eccezioni;
+package lab.Eccezioni;
 
 public class EccezioneStrutturaVuota extends RuntimeException {
 

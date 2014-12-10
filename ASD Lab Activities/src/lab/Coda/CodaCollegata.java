@@ -1,6 +1,6 @@
 package lab.Coda;
 
-import lab.eccezioni.EccezioneStrutturaVuota;
+import lab.Eccezioni.EccezioneStrutturaVuota;
 
 
 /**
