@@ -35,7 +35,7 @@ public class HashMapDict implements Dizionario {
 
 	
 	public static void main (String[] args) {
-		HashMapDict d = new HashMapDict();
+		Dizionario d = new HashMapDict();
 		
 		d.insert("1234", "Antonio");
 		d.insert("4567", "Mario");

@@ -76,7 +76,7 @@ public class CodaCollegata<T> implements Coda<T> {
 
 	public static void main(String[] args) {
 
-		CodaCollegata<String> c = new CodaCollegata<String>();
+		Coda<String> c = new CodaCollegata<String>();
 
 		System.out.println(c.isEmpty());
 		c.enqueue("Antonio");

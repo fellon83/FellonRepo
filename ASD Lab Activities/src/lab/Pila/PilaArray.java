@@ -65,7 +65,7 @@ public class PilaArray<T> implements Pila<T> {
 	}
 	
 	public static void main (String[] args) {
-		PilaArray<String> p = new PilaArray<>();
+		Pila<String> p = new PilaArray<>();
 		
 		System.out.println(p.isEmpty());
 		p.push("Antonio");

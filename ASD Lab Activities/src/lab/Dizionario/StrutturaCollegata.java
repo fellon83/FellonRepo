@@ -75,7 +75,7 @@ public class StrutturaCollegata implements Dizionario {
 	}
 
 	public static void main(String args[]) {
-		StrutturaCollegata d = new StrutturaCollegata();
+		Dizionario d = new StrutturaCollegata();
 		d.insert("1234", "Antonio");
 		d.insert("4567", "Mario");
 		d.insert("8901", "Giovanni");

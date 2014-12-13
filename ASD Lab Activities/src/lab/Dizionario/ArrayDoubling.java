@@ -60,7 +60,7 @@ public class ArrayDoubling implements Dizionario {
 	}
 
 	public static void main(String args[]) {
-		ArrayDoubling d = new ArrayDoubling();
+		Dizionario d = new ArrayDoubling();
 		d.insert("1234", "Antonio");
 		d.insert("4567", "Mario");
 		d.insert("8901", "Giovanni");

@@ -60,7 +60,7 @@ public class TabellaHashListeCollisione implements Dizionario {
 	public static void main (String[] args) {
 		Hash hFun = new HashDivisione();
 		int tableDim = 10;
-		TabellaHashListeCollisione d = new TabellaHashListeCollisione (hFun,tableDim);
+		Dizionario d = new TabellaHashListeCollisione (hFun,tableDim);
 		d.insert("1234", "Antonio");
 		d.insert("4567", "Mario");
 		d.insert("8901", "Giovanni");

@@ -155,7 +155,7 @@ public class CodaDoppiaArray<T> implements CodaDoppia<T> {
 	 * e i vari casi limiti 
 	 */
 	public static void main(String[] args) {
-		CodaDoppiaArray<String> cd = new CodaDoppiaArray<String>();
+		CodaDoppia<String> cd = new CodaDoppiaArray<String>();
 		cd.enqueue("1");
 		cd.enqueue("2");
 		cd.push("3");

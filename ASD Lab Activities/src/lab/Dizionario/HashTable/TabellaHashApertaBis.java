@@ -96,7 +96,7 @@ public class TabellaHashApertaBis implements Dizionario {
 		Hash hFun = new HashDivisione();
 		Scansione cFun = new ScansioneLineare();
 		int tableDim = 10;
-		TabellaHashApertaBis d = new TabellaHashApertaBis(hFun, cFun, tableDim);
+		Dizionario d = new TabellaHashApertaBis(hFun, cFun, tableDim);
 		d.insert("1234", "Antonio");
 		d.insert("4567", "Mario");
 		d.insert("8901", "Giovanni");

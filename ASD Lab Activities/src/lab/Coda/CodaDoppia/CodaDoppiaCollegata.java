@@ -120,7 +120,7 @@ public class CodaDoppiaCollegata<T> implements CodaDoppia<T> {
 	 */
 	public static void main(String[] args) {
 
-		CodaDoppiaCollegata<String> c = new CodaDoppiaCollegata<String>();
+		CodaDoppia<String> c = new CodaDoppiaCollegata<String>();
 
 		System.out.println(c.isEmpty());
 		c.enqueue("Antonio");

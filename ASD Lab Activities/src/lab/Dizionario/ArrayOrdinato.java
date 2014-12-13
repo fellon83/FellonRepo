@@ -104,7 +104,7 @@ public class ArrayOrdinato implements Dizionario {
 		
 		String nome, numero;
 		boolean flag = true;
-		ArrayOrdinato d = new ArrayOrdinato();
+		Dizionario d = new ArrayOrdinato();
 		
 		while (flag) {
 			System.out.println("\n* * * Operazioni disponibili * * *\n");
