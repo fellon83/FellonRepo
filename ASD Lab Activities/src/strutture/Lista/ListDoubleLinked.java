@@ -79,7 +79,7 @@ public class ListDoubleLinked<T> implements Lista<T> {
 				temp = inizioLista;
 				inizioLista = new PuntatoreDouble(new CellaDouble(e));
 				inizioLista.link.successivo=temp;
-				inizioLista.link.precedente=inizioLista;
+				temp.link.precedente=inizioLista;
 			} else {
 				temp = ((PuntatoreDouble)p).link.successivo;
 				q = new PuntatoreDouble(new CellaDouble(e));
