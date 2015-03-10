@@ -31,13 +31,13 @@ public class ArrayDoubling implements Dizionario {
 	}
 
 	public void delete(Comparable k) {
-		int i, j;
+		int i;
 		for (i = 0; i < numElementi; i++) {
 			if (s[i].chiave.equals(k)) {
 				break;
 			}
 		}
-		for (j = i; j < numElementi - 1; j++) {
+		for (int j = i; j < numElementi - 1; j++) {
 			s[j] = s[j + 1];
 		}
 		numElementi--;
