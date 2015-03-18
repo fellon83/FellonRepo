@@ -22,8 +22,8 @@ public class Test {
 		int priorita;
 		String nuovoNomeCoda = null;
 		PQ<Process> nuovaCoda;
-		
-		if (probValue < 10) {
+
+		if (probValue < 20) {
 			priorita = r.nextInt(MIN_PRIORITA);
 		} else {
 			priorita = code.get(nomeCodaCasuale).getPriority(p);
@@ -66,8 +66,8 @@ public class Test {
 		System.out.println("Stampo la coda dei processi " + NOME_CODA[0]);
 		int n = 1;
 		for (Process temp : code.get(NOME_CODA[0])) {
-			System.out.println("Processo n." + n++ + ": " + temp.toString()
-					+ " Priorità: "
+			System.out.println("Processo n." + n++ + " - " + temp.toString()
+					+ " Priorit�: "
 					+ (code.get(NOME_CODA[0])).getPriority(temp));
 		}
 
@@ -76,7 +76,7 @@ public class Test {
 			int indice = r.nextInt(NOME_CODA.length);
 			nomeCodaCasuale = NOME_CODA[indice];
 			PQ<Process> codaSel = (PQ<Process>) code.get(nomeCodaCasuale);
-			
+
 			if (!codaSel.isNew()) {
 				Process proc = codaSel.first();
 				changeStatePriority(proc);
@@ -86,30 +86,19 @@ public class Test {
 			}
 
 		}
-		
-		System.out.println("\n\n - Ristampo le code dopo gli spostamenti dei processi - ");
-		System.out.println("\nCoda dei processi " + NOME_CODA[0]);
-		 n = 1;
-		for (Process temp : code.get(NOME_CODA[0])) {
-			System.out.println("Processo n." + n++ + ": " + temp.toString()
-					+ " Priorità: "
-					+ (code.get(NOME_CODA[0])).getPriority(temp));
+
+		System.out
+				.println("\n\n - Ristampo le code dopo gli spostamenti dei processi - ");
+		for (int i = 0; i < NOME_CODA.length; i++) {
+
+			System.out.println("\nCoda dei processi " + NOME_CODA[i]);
+			n = 1;
+			for (Process temp : code.get(NOME_CODA[i])) {
+				System.out.println("Processo n." + n++ + " - " + temp.toString()
+						+ " Priorit�: "
+						+ (code.get(NOME_CODA[i])).getPriority(temp));
+			}
 		}
-		
-		System.out.println("\nCoda dei processi " + NOME_CODA[1]);
-		n = 1;
-		for (Process temp : code.get(NOME_CODA[1])) {
-			System.out.println("Processo n." + n++ + ": " + temp.toString()
-					+ " Priorità: "
-					+ (code.get(NOME_CODA[1])).getPriority(temp));
-		}
-		
-		System.out.println("\nCoda dei processi " + NOME_CODA[2]);
-		n = 1;
-		for (Process temp : code.get(NOME_CODA[2])) {
-			System.out.println("Processo n." + n++ + ": " + temp.toString()
-					+ " Priorità: "
-					+ (code.get(NOME_CODA[2])).getPriority(temp));
-		}
+
 	}
 }
