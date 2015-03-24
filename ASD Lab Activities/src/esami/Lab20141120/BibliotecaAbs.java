@@ -52,7 +52,7 @@ public abstract class BibliotecaAbs<K> implements Iterable<K> {
 		Record<Volume> r = volumi.search(posizione);
 		if (r == null)
 			throw new IllegalVolumeException("Volume non esistente!");
-		r.flag = PRESTATO;
+		r.flag = DISPONIBILE;
 		nElementi++;
 	}
 
@@ -67,7 +67,7 @@ public abstract class BibliotecaAbs<K> implements Iterable<K> {
 		AddOnlyList<String> posList = new DoubleLinkedList<String>();
 		for (String s : volumi) {
 			Record<Volume> r = volumi.search(s);
-			if (r.flag == DISPONIBILE && (r.vol.equals(volume))) {
+			if (!(r.flag) && (r.vol.compareVolume(volume))) {
 				posList.add(s);
 			}
 		}

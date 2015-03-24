@@ -59,18 +59,18 @@ public class Test {
 		AddOnlyList<String> autori = new DoubleLinkedList<String>();
 		autori.add("John Lewis");
 		autori.add("Joseph Chase");
-		Volume v = new Volume("Java Software Structures", "Pearson Education,", 2010, autori);
+		Volume v = new Volume("Java Software Structures", "Pearson Education", 2010, autori);
 		
 		/*
 		 *TODO: Verificare il prestito di un libro 
 		 */
-//		AddOnlyList<String> posizioni = bib.posizione(v);
-//		String pos = null;
-//		for (String e: posizioni) {
-//			pos = e;
-//			break;
-//		}
-//		bib.prestito(pos);
+		AddOnlyList<String> posizioni = bib.posizione(v);
+		String pos = null;
+		for (String e: posizioni) {
+			pos = e;
+			break;
+		}
+		bib.prestito(pos);
 		System.out.println("--- Lista volumi biblioteca ---");
 		for (Object e: bib) {
 			String s = e.toString();
