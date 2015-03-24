@@ -1,55 +1,43 @@
-# Created by https://www.gitignore.io
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
 
-### Java ###
-*.class
-*.java
+# Folder config file
+Desktop.ini
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
 
-# Package Files #
-*.jar
-*.war
-*.ear
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# =========================
+# Operating System Files
+# =========================
 
+# OSX
+# =========================
 
-### Eclipse ###
-*.pydevproject
-.metadata
-.gradle
-src/
-tmp/
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.settings/
-.loadpath
+.DS_Store
+.AppleDouble
+.LSOverride
 
-# Eclipse Core
-.project
+# Icon must end with two \r
+Icon
 
-# External tool builders
-.externalToolBuilders/
+# Thumbnails
+._*
 
-# Locally stored "Eclipse launch configurations"
-*.launch
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
 
-# CDT-specific
-.cproject
-
-# JDT-specific (Eclipse Java Development Tools)
-.classpath
-
-# PDT-specific
-.buildpath
-
-# sbteclipse plugin
-.target
-
-# TeXlipse plugin
-.texlipse
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
