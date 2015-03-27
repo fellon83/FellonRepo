@@ -18,14 +18,14 @@ public class Market {
 			System.out.println("--- CARRELLO " + (j) + " ---" );
 			for (Object obj : acquisti[i]) {
 				Articolo a = (Articolo) obj;
-				System.out.println("Articolo : " + a.toString() + " Quantit≈ï: " + acquisti[i].quantit≈ï(a));				
+				System.out.println("Articolo : " + a.toString() + " Quantit‡: " + acquisti[i].quantit‡(a));				
 			}
 			System.out.println();
 		}
 	}
 	
 	/**
-	 * stampa la quantita totale acquistata di ogni articolo
+	 * stampa la quantita di ogni articolo acquistato
 	 */
 	public void istogramma() {
 		System.out.println("--- ISTOGRAMMA ---");
@@ -33,10 +33,10 @@ public class Market {
 			int nElemArt = 0;
 			for (Carrello c: acquisti) {
 				if (c.appartiene(a))
-					nElemArt += c.quantit≈ï(a);
+					nElemArt += c.quantit‡(a);
 					
 			}
-			System.out.println("Articolo: " + a.toString() + " - Quantit≈ï: " + nElemArt );
+			System.out.println("Articolo: " + a.toString() + " - Quantit‡: " + nElemArt );
 		}		
 	}
 }

@@ -29,6 +29,7 @@ public class Test {
 				"Vassilios S. Verykios");
 		riv.addAut("Privacy preserving record linkage approaches",
 				"Alexandros Karakasidis");
+		riv.pubblicaVol(2);
 		riv.addAut("Privacy preserving record linkage approaches",
 				"Vassilios K. Mitrogiannis");
 		riv.addAut("On the selection of k efficient paths by clustering techniques",
