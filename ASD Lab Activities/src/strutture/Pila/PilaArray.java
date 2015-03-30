@@ -91,8 +91,8 @@ public class PilaArray<T> implements Pila<T> {
 		try {
 		p.pop();
 		}
-		catch (RuntimeException e) {
-			System.err.println(e);
+		catch (EccezioneStrutturaVuota e) {
+			System.err.println(e.getMessage());
 		}
 
 		p.push("Mario");

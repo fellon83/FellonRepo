@@ -14,7 +14,7 @@ public class ListLinked<T> implements Lista<T> {
 
 	@Override
 	public Iterator<T> iterator() {
-		return null;
+		return new ListIterator<T>(this);
 	}
 
 	@Override

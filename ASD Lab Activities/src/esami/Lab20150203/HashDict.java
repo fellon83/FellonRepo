@@ -37,7 +37,7 @@ public class HashDict<S> implements Dictionary<S> {
 		for (Object obj : s[pos]) {
 			Record<S> r = (Record<S>) obj;
 			if (r.key.equals(k))
-				throw new EccezioneKiaveEsistente("Chiave esistente");
+				throw new EccezioneChiaveEsistente("Chiave esistente");
 		}
 		s[pos].add(new Record<S>(e, k));
 	}
@@ -47,15 +47,16 @@ public class HashDict<S> implements Dictionary<S> {
 		boolean found = false;
 		int i;
 		int pos = h(k);
-		for (i=0; i<s[pos].size(); i++) {
-			Record<S> r = s[pos].get(i);
+		Record<S> r =null;
+		for (Object o : s[pos]) {
+			r = (Record) o;
 			found = (r.key.equals(k));
 			if (found)
 				break;
 		} 
 		if (!found)
 			throw new EccezioneChiaveNonValida("Chiave non esistente!");		
-		s[pos].remove(i);
+		s[pos].remove(r);
 
 	}
 
@@ -78,28 +79,27 @@ public class HashDict<S> implements Dictionary<S> {
 	@Override
 	public Iterator<Comparable> iterator() {
 		return new Iterator<Comparable>() {
-			int i = 0;
+			int i = 1;
 			Record<S> r;
-			Iterator<Record<S>> it = null;
+			Iterator<Record<S>> it = s[0].iterator();
 			
 			@Override
 			public boolean hasNext() {
-				if(it == null)
-					it = s[0].iterator();
-				
+								
 				while(!it.hasNext()){
-					if(++i < s.length)
+					if(i < s.length)
 						it = s[i].iterator();
 					else
 						return false;
+					i++;
 				}
 				
-				r = it.next();
 				return true;
 			}
 
 			@Override
 			public Comparable next() {
+				r = it.next();
 				return r.key;
 			}};
 

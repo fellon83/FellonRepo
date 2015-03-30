@@ -29,7 +29,7 @@ public class CodaDoppiaArray<T> implements CodaDoppia<T> {
 	 * se nel caso non ci sia posto perché raggiunta la fine dell'array, viene riallocato l'array e aggiornati 
 	 * gli indici (stessa cosa dello shiftare tutto a sinistra di un posto)
 	 * 
-	 * se al termine dell'accodamento l'arrya è completamente pieno, viene raddoppiato.
+	 * se al termine dell'accodamento l'array è completamente pieno, viene raddoppiato.
 	 */
 	public void enqueue(T e) {
 		if (isEmpty()) {
@@ -190,23 +190,23 @@ public class CodaDoppiaArray<T> implements CodaDoppia<T> {
 		// prove eccezioni
 		try {
 			cd.pop();
-		} catch (RuntimeException e) {
-			System.err.println(e);
+		} catch (EccezioneStrutturaVuota e) {
+			System.err.println(e.getMessage());
 		}
 		try {
 			cd.dequeue();
-		} catch (RuntimeException e) {
-			System.err.println(e);
+		} catch (EccezioneStrutturaVuota e) {
+			System.err.println(e.getMessage());
 		}
 		try {
 			cd.last();
-		} catch (RuntimeException e) {
-			System.err.println(e);
+		} catch (EccezioneStrutturaVuota e) {
+			System.err.println(e.getMessage());
 		}
 		try {
 			cd.first();
-		} catch (RuntimeException e) {
-			System.err.println(e);
+		} catch (EccezioneStrutturaVuota e) {
+			System.err.println(e.getMessage());
 		}
 	}
 
